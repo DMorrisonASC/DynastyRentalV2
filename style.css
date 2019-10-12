@@ -1,0 +1,147 @@
+/* Navigation is in the header */
+html {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+header {
+    background-color: orange;
+    position: fixed;
+    top: 0px;
+    z-index: 6;
+    width: 100%;
+    height: 110px;
+}
+main {
+  position: relative;
+  top: 100px;
+}
+p {
+  font-size: 23px;
+}
+#menu-outer {
+    margin: 0px;
+
+   }
+   .nav-list {
+     margin-right: 10px;
+     font-size: 25px;
+   }
+   
+   .table {
+       display: table;   /* Allow the centering to work */
+       margin: 0 auto;
+   }
+   
+   ul#horizontal-list {
+     list-style: none;
+     text-align: center;
+     margin-top: 0px;
+     padding-left: 5px;
+     padding-right: 5px; 
+       }
+       ul#horizontal-list li {
+       display: inline;
+       }
+/* Main Section */
+/* The div around "Services" */
+.about-self-block {
+    background-color:  #CBE86B;
+    width: 100%;
+  
+  
+  }
+  /* This div appears when screen width is greater then 600px */
+  .dispear-section {
+    width: 100%;
+    display: flex;
+    box-shadow: 0 8px 6px -6px black;
+    position: relative;
+    z-index: 5;
+    font-size: 21px;
+  }
+    .dispear-section ul {
+        width: 40%;
+    }
+
+  /* This div appears when screen width is less then 600px */
+  .dispear-section-mobile {
+    display:none;
+  }
+  
+  .about-self-info {
+    text-align: left;
+    padding: 10px;
+    word-wrap: break-word;
+    font-size: 20px;
+  }
+  .self-photo {
+    width: 60%;
+    margin-left: 10px;
+  }
+  /* Media Queries */
+
+@media only screen and (max-width: 770px) {
+    #package{
+      text-align: center;
+      font-size: 22px;
+    }
+    ul#horizontal-list li {
+      display: inline;
+      font-size: 17px;
+      }
+    .self-photo {
+        width: 100%;
+      }
+      .dispear-section {
+        display: none;
+    
+      }
+      .dispear-section-mobile{
+        display:block;
+        box-shadow: 0 8px 6px -6px black;
+        position: relative;
+        z-index: 5;
+      }
+      #dispear-section-mobile ul {
+      font-size: 23px;
+      }
+    .about-self-info {
+      padding-left: 10px;
+      word-wrap: break-word;
+      font-size: 17px;
+    }
+    .self-photo {
+        width: 100%;
+        margin-left: 0px;
+      }
+  }
+  /* portfolio block, the div around the "Portfolio" + <figcation> */
+.portfolio-block {
+
+  word-wrap: break-word;
+  display: flex;
+  border-bottom: 5px brown dashed;
+  background-color:  #EB6841;
+  padding-bottom: 10px;
+
+}
+.project-block {
+  background-color:  #EB6841;
+  width: 50%;
+  word-wrap: break-word;
+  border-right: 5px dashed brown;
+  box-sizing: border-box;
+  margin: 0px;
+  font-size: 25px;
+  text-align: center;
+
+}
+
+/* Note:When using percentages, elements take size based size of div.
+Example .img-project's width is 25% the width of .project-block */
+.img-project {
+  width: 100%;
+  height: 50%;
+}
+  
+  
