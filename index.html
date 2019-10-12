@@ -27,7 +27,6 @@
                     <li class="nav-list">
                         <img src="img\Facebook_Circle.svg.png" style="width: 30px" alt="phone Icon">
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -36,8 +35,46 @@
 
         <div class="about-self-block">
             <!-- This appears for mobile -->
+            <!-- Code for Slideshow from W3School -->
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 5</div>
+                    <img src="img\0121.jpg" style="width:100%">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 5</div>
+                    <img src="img\3g.jpg" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 5</div>
+                    <img src="img\0084 (2).jpg" style="width:100%">
+                    <div class="text">Cap Three</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 5</div>
+                    <img src="img\0201.jpg" style="width:100%">
+                    <div class="text">Cap Three</div>
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">5 / 5</div>
+                    <img src="img\img_0090.jpg" style="width:100%">
+                    <div class="text">Cap Three</div>
+                </div>
+                <br>
+            </div>
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
             <fiqure class="dispear-section-mobile" style="width: 100%">
-                <img class="self-photo" src="img\IMG_3868 (1).jpg" />
                 <h1 id="package">DynastyRentals™ offer products that we will
                     deliver, set-up, and retrieve them when your done!.</h1>
                 <div class="portfolio-block">
@@ -52,12 +89,10 @@
 
 
                     <figure class="project-block">
-
                         <img class="img-project" src="img\IMG_3830 (1).jpg" />
                         <figcaption>
                             Closed-Air Booth
                         </figcaption>
-
                     </figure>
                 </div>
                 <!-- Two pictures per block(Second) -->
@@ -74,7 +109,7 @@
                     <figure class="project-block">
                         <a href="#">
                             <img class="img-project" src="img\IMG-20170720-WA0006.jpg" />
-                            <figcaption> Unlimted Prints
+                            <figcaption> Unlimited Prints
                             </figcaption>
                         </a>
                     </figure>
@@ -108,6 +143,27 @@
                 <img class="self-photo" src="img\IMG_3868 (1).jpg" />
             </div>
         </div>
+        <!-- Script from W3Schools needed for slideshow -->
+        <script defer>
+            var slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) { slideIndex = 1 }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
     </main>
     <footer>
 
