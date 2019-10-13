@@ -4,10 +4,12 @@ html {
     background-color: #EB6841;
 }
 /* Fixes whitespace caused by slideshow */
-* {box-sizing: border-box;}
+* {box-sizing: border-box;
+  margin: 0px;
+}
 
 header {
-    background-color: brown;
+    background-color: white;
     position: fixed;
     top: 0px;
     z-index: 6;
@@ -132,7 +134,7 @@ p {
     }
     ul#horizontal-list li {
       display: inline;
-      font-size: 17px;
+      font-size: 15px;
       }
     .self-photo {
         width: 100%;
