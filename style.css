@@ -7,7 +7,7 @@ html {
 * {box-sizing: border-box;}
 
 header {
-    background-color: orange;
+    background-color: brown;
     position: fixed;
     top: 0px;
     z-index: 6;
@@ -81,7 +81,11 @@ p {
       text-align: center;
       font-size: 22px;
       border-bottom: 5px dashed #EB6841;
+      background-color: orange;
       margin: 0px;
+      /* padding-left: 100px;
+      padding-right: 100px; */
+      padding: 50px;
     }
 
   /* This div disappears when screen width is greater then 770px */

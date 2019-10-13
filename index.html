@@ -66,6 +66,7 @@
                     <div class="text"></div>
                 </div>
             </div>
+            <br>
             <div class="dispear-section-mobile" style="text-align:center">
                 <span class="dot"></span>
                 <span class="dot"></span>
@@ -86,8 +87,6 @@
                         </figcaption>
 
                     </figure>
-
-
                     <figure class="project-block">
                         <img class="img-project" src="img\IMG_3830 (1).jpg" />
                         <figcaption>
@@ -165,6 +164,7 @@
                         <div class="textPC"></div>
                     </div>
                 </div>
+                <br>
                 <div class="noShow" style="text-align:center">
                     <span class="dotPC"></span>
                     <span class="dotPC"></span>
@@ -172,64 +172,58 @@
                     <span class="dotPC"></span>
                     <span class="dotPC"></span>
                 </div>
-                <table style="width:100%">
-                    <tr>
-                        <td>
-                            <figure class="project-block">
-                                <img class="img-project" src="img\IMG_3868 (1).jpg" />
-                                <figcaption> Open-Air Booth
-                                </figcaption>
-                            </figure>
-                        </td>
-                        <td>
-                            <figure class="project-block">
-                                <img class="img-project" src="img\IMG_3830 (1).jpg" />
-                                <figcaption>
-                                    Closed-Air Booth
-                                </figcaption>
-                            </figure>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <figure class="project-block">
+                <!-- Product Section(PC) -->
+                <fiqure class="dispear-section" style="width: 100%">
+                    <h1 id="package">DynastyRentals™ offer products that we will
+                        deliver, set-up, and retrieve them when your done!.</h1>
+                    <div class="portfolio-block">
+                        <figure class="project-block">
 
-                                <img class="img-project" src="img\Template.png" />
-                                <figcaption>
-                                    Customizable Templates
-                                </figcaption>
-                            </figure>
-                        </td>
-                        <td>
-                            <figure class="project-block">
-                                <img class="img-project" src="img\IMG-20170720-WA0006.jpg" />
-                                <figcaption> Unlimited Prints
-                                </figcaption>
+                            <img class="img-project" src="img\IMG_3868 (1).jpg" />
+                            <figcaption> Open-Air Booth
+                            </figcaption>
 
-                            </figure>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <figure class="project-block">
+                        </figure>
 
-                                <img class="img-project" src="img\IMG-20170527-WA0001.jpg" />
-                                <figcaption>
-                                    Portable Dance-floors(Up to 21 x 21 floor)
-                                </figcaption>
 
-                            </figure>
-                        </td>
-                        <td>
-                            <figure class="project-block">
-                                <img class="img-project" src="img\OnlineGalley.png" />
-                                <figcaption>
-                                    Online Gallery
-                                </figcaption>
-                            </figure>
-                        </td>
-                    </tr>
-                </table>
+                        <figure class="project-block">
+                            <img class="img-project" src="img\IMG_3830 (1).jpg" />
+                            <figcaption>
+                                Closed-Air Booth
+                            </figcaption>
+                        </figure>
+                        <figure class="project-block">
+
+                            <img class="img-project" src="img\Template.png" />
+                            <figcaption>
+                                Customizable Templates
+                            </figcaption>
+
+                        </figure>
+
+                        <figure class="project-block">
+                            <img class="img-project" src="img\IMG-20170720-WA0006.jpg" />
+                            <figcaption> Unlimited Prints
+                            </figcaption>
+                        </figure>
+                        <figure class="project-block">
+
+                            <img class="img-project" src="img\IMG-20170527-WA0001.jpg" />
+                            <figcaption>
+                                Portable Dance-floors(Up to 21 x 21 floor)
+                            </figcaption>
+
+                        </figure>
+
+                        <figure class="project-block">
+                            <img class="img-project" src="img\OnlineGalley.png" />
+                            <figcaption>
+                                Online Gallery
+                            </figcaption>
+                        </figure>
+                    </div>
+
+                </fiqure>
             </div>
         </div>
         <!-- Script from W3Schools needed for slideshow -->
@@ -255,7 +249,7 @@
         </script>
         <!-- Script from W3Schools needed for slideshow (PC Version)-->
         <script defer>
-            var slideIndex = 0;
+            var slideIndexPC = 0;
             showSlidesPC();
             function showSlidesPC() {
                 var i;
@@ -264,13 +258,13 @@
                 for (i = 0; i < slidesPC.length; i++) {
                     slidesPC[i].style.display = "none";
                 }
-                slideIndex++;
-                if (slideIndex > slidesPC.length) { slideIndex = 1 }
+                slideIndexPC++;
+                if (slideIndexPC > slidesPC.length) { slideIndexPC = 1 }
                 for (i = 0; i < dotsPC.length; i++) {
                     dotsPC[i].className = dotsPC[i].className.replace(" activePC", "");
                 }
-                slidesPC[slideIndex - 1].style.display = "block";
-                dotsPC[slideIndex - 1].className += " activePC";
+                slidesPC[slideIndexPC - 1].style.display = "block";
+                dotsPC[slideIndexPC - 1].className += " activePC";
                 setTimeout(showSlidesPC, 2000); // Change image every 2 seconds
             }
         </script>
@@ -280,4 +274,4 @@
     <h4>Copyright (c) 2016 DynastyRentals™. All Rights Reserved.</h4>
 </footer>
 
-</html>F
+</html>
