@@ -128,6 +128,7 @@ p {
       font-size: 22px;
       border-bottom: 5px dashed #EB6841;
       margin: 0px;
+      background-color: orange;
     }
     ul#horizontal-list li {
       display: inline;
@@ -182,9 +183,6 @@ Example .img-project's width is 25% the width of .project-block */
 .img-project {
   width: 100%;
   height: 50%;
-}
-.noShow {
-  display: none;
 }
 
 /* CSS needed for W3School's slideshow (PC media Query)*/
