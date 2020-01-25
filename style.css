@@ -1,4 +1,5 @@
 /* Navigation is in the header */
+/* All the elements are edited here */
 html {
     font-family: Tahoma, Verdana, sans-serif;
     background-color: white;
@@ -17,7 +18,7 @@ header {
 }
 main {
   position: relative;
-  top: 115px;
+  top: 125px;
 }
 footer {
   position: relative;
@@ -27,6 +28,13 @@ footer {
 }
 p {
   font-size: 23px;
+}
+/* Multi-selectors */
+.project-block a {
+  color: white;
+}
+.project-block figcaption {
+  color: white;
 }
    /* CSS for items in the header */
 #menu-outer {
@@ -52,14 +60,16 @@ p {
        display: inline;
        }
 /* Main Section */
+.mySlidesPC img {
+border-top: 10px navy solid;
+border-bottom: 10px navy solid;
+}
 /* The div around "Services" */
 .about-self-block {
     background-color: white;
     width: 100%;
-  
-  
   }
-  /* This div appears when screen width is greater then 770px */
+  /* This div appears when screen width is greater then 770px(PC section) */
     .dispear-section ul {
         width: 40%;
     }
@@ -68,15 +78,16 @@ p {
       font-size: 22px;
       background-color: white;
       margin: 0px;
-      /* padding-left: 100px;
-      padding-right: 100px; */
       padding: 50px;
     }
-
-  /* This div disappears when screen width is greater then 770px */
+  /* This div disappears when screen width is greater then 770px(Mobile Section) */
   .dispear-section-mobile {
     display:none;
   }
+  .mySlides img {
+    border-top: 10px navy solid;
+    border-bottom: 10px navy solid;
+    }
   
   .about-self-info {
     text-align: left;
@@ -84,11 +95,8 @@ p {
     word-wrap: break-word;
     font-size: 20px;
   }
-  .self-photo {
-    width: 60%;
-  }
     .project-block {
-      background-color: skyblue;
+      background-color: navy;
       width: 100%;
       word-wrap: break-word;
       border-right: 5px dashed white;
@@ -150,13 +158,13 @@ p {
   display: flex;
   border-top: 5px white dashed;
   border-bottom: 5px white dashed;
-  background-color:  skyblue;
   padding-bottom: 10px;
 }
+/* The seperate products */
 .project-block {
-  background-color: skyblue;
+  background-color: navy;
   word-wrap: break-word;
-  border-right: 5px dashed white;
+  border-right: 5px solid white;
   box-sizing: border-box;
   margin: 0px;
   font-size: 25px;
